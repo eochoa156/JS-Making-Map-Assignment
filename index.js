@@ -9,3 +9,10 @@
         - programatically render a list of results
         -map the locations on the map
 */
+
+navigator.geolocation.getCurrentPosition((success) => {
+    console.log('it works:', position)
+
+}, (error) => {
+    console.log(error)
+})

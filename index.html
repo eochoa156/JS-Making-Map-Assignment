@@ -1,19 +1,28 @@
 <html>
     <head>
-
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
     </head>
     <body>
         <h1>The page is not loading</h1>
-        <!--map div-->
+        <label>Find business near me
+            <select>
+                <option value="Restaurants">Restaurants</option>
+                <option value="Bankng and Finance">Banks/ATMs</option>
+                <option value="Fuel Station">Gas</option>
+                <option value="Grocery Store">Grocery Store</option>
+                <option value="Health and Beauty Service">Salons</option>
+            </select>
+        </label>
+        <button>Search</button>
         <div id = "map"></div>
-        <!--category select element-->
-        <select>
-            <option value="Restaurants"></option>
-            <option value="Bankng and Finance"></option>
-            <option value="Fuel Station"></option>
-            <option value="Grocery Store"></option>
-            <option value="Health and Beauty Service"></option>
-        </select>
+        <ul>
+        </ul>
         <!--list of search results-->
     </body>
 </html>
